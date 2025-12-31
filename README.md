@@ -19,29 +19,6 @@ This project provides a clean, interpretable method for detecting anomalies in t
 - **Parameter Tuning**: Adjustable rolling window size and anomaly threshold
 - **Export Results**: Download detected anomalies and full analysis results
 
-## Installation
-
-1. Clone or download this project
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Quick Start
-
-1. **Generate sample data** (optional):
-```bash
-python create_ts_sample_data.py
-```
-
-2. **Run the dashboard**:
-```bash
-streamlit run anomaly_dashboard.py
-```
-
-3. **Upload your CSV file** or use the sample data at `data/sample_ts_data.csv`
-
 ## Data Format
 
 Your CSV file should contain:
@@ -141,38 +118,6 @@ ts_anomaly_detection/
 - **2.0 - 2.5**: Standard threshold, flags moderate deviations
 - **3.0 - 3.5**: Conservative threshold, only extreme anomalies
 - **1.5 - 2.0**: Sensitive threshold, flags many potential issues
-
-## Usage Examples
-
-### Using the Dashboard
-
-1. Upload your CSV file
-2. Select timestamp and value columns
-3. Adjust window size and threshold using sliders
-4. View visualizations and anomaly details
-5. Download results if needed
-
-### Using the Code Directly
-
-```python
-from src.ts_data_loader import load_time_series_data
-from src.anomaly_detector import detect_anomalies_in_time_series
-
-# Load data
-df = load_time_series_data('data/my_data.csv', 'timestamp', 'value')
-
-# Detect anomalies
-df_analyzed = detect_anomalies_in_time_series(
-    df, 
-    value_column='value',
-    window_size=20,
-    threshold=2.5
-)
-
-# View anomalies
-anomalies = df_analyzed[df_analyzed['is_anomaly']]
-print(f"Found {len(anomalies)} anomalies")
-```
 
 ## Limitations
 
