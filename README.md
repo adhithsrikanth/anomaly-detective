@@ -27,9 +27,13 @@ Your CSV file should contain:
 
 ## Sample Dataset
 
-A sample dataset is available for testing. Download it here:
+A sample dataset is available for testing. To download:
 
-**[Download sample_ts_data.csv](https://github.com/adhithsrikanth/anomaly-detective/raw/main/data/sample_ts_data.csv)**
+1. Navigate to the [data folder](https://github.com/adhithsrikanth/anomaly-detective/tree/main/data)
+2. Click on `sample_ts_data.csv`
+3. Click the "Download" button (or right-click and "Save link as")
+
+Alternatively, if you have the repository cloned, the file is located at `data/sample_ts_data.csv`.
 
 This sample dataset contains 500 data points with hourly timestamps and numeric values. The data includes some injected anomalies that can be detected using the tool. The format is:
 
