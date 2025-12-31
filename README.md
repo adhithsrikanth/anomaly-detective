@@ -27,37 +27,18 @@ Your CSV file should contain:
 
 ## Sample Dataset
 
-Here's an example of what your data should look like:
+A sample dataset is available for testing. Download it here:
+
+**[Download sample_ts_data.csv](https://github.com/adhithsrikanth/anomaly-detective/raw/main/data/sample_ts_data.csv)**
+
+This sample dataset contains 500 data points with hourly timestamps and numeric values. The data includes some injected anomalies that can be detected using the tool. The format is:
 
 ```csv
 timestamp,value
 2024-01-01 00:00:00,50.99
 2024-01-01 01:00:00,51.03
-2024-01-01 02:00:00,53.82
-2024-01-01 03:00:00,56.61
-2024-01-01 04:00:00,53.90
-2024-01-01 05:00:00,54.41
-2024-01-01 06:00:00,58.22
-2024-01-01 07:00:00,56.43
-2024-01-01 08:00:00,53.47
-2024-01-01 09:00:00,54.71
-2024-01-01 10:00:00,51.67
-2024-01-01 11:00:00,50.47
-2024-01-01 12:00:00,50.60
-2024-01-01 13:00:00,45.01
-2024-01-01 14:00:00,44.19
-2024-01-01 15:00:00,61.15
-2024-01-01 16:00:00,43.80
-2024-01-01 17:00:00,45.97
-2024-01-01 18:00:00,43.36
-2024-01-01 19:00:00,44.76
-2024-01-01 20:00:00,48.12
-2024-01-01 21:00:00,47.89
-2024-01-01 22:00:00,49.23
-2024-01-01 23:00:00,51.45
+...
 ```
-
-This sample dataset contains 500 data points with hourly timestamps and numeric values. The data includes some injected anomalies that can be detected using the tool.
 
 ## How It Works
 
