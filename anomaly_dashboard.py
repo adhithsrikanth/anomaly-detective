@@ -347,9 +347,12 @@ def main():
                     )
                 
                 with col2:
+                    # Default to second column (index 1) if available, otherwise first column
+                    default_value_index = 1 if len(preview_df.columns) >= 2 else 0
                     value_col = st.selectbox(
                         "Value Column",
                         options=preview_df.columns.tolist(),
+                        index=default_value_index,
                         help="Select the column containing numeric values",
                         key="val_col"
                     )
